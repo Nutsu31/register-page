@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #E5E5E5;
+}
+.boxWrapper{
+    width: 1190px;
+    height: 700px;
+    margin: 5% auto;
+    display: flex;
+}
+
+.box{
+    width: 50%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.box2{
+    padding: 0 48px 24px 48px;
+    background: #fff;
+    border-radius: 15px;
+    position: relative;
+    right: 24px;
+}
+
+.box2 h4{
+    color: #003D61;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 134.18%;
+    letter-spacing: 0.06em;
+    margin-top: 21px;
+
+}
+
+.box2 form{
+    width: 100%;
+    height: 230px;
+    padding: 0 58px;
+    margin-bottom: 20px;
+}
+.box2 form input{
+    width: 100%;
+    height: 35px;
+    padding: 0 45px;
+    border: 1px solid #003D61;
+    border-top :none;
+    border-right :none;
+    outline: none;
+}
+
+.box2 form .ruleLine1, .ruleLine2{
+    width: 400px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    color: #003D61;
+    backdrop-filter: blur(2px);
+}
+form .ruleLine1 button{
+    width: 50px;
+}
+.box2 form .ruleLine2{
+    margin-top: 10px;
+}
+
+.ruleLine1 [type="checkbox"]{
+    display: none;
+}
+.ruleLine1 #checkIt{
+    width: 42px;
+    height: 24px;
+    background-color: gray;
+    position: relative;
+    left: -10px;
+    border-radius: 100px;
+}
+
+.ruleLine1 #checkIt .ball{
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    left: 2px;
+    top: 3px;
+    transition: 0.3s ease;
+}
+
+
+.ruleLine1 #checkIt .active{
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    right: 2px;
+    top: 3px;
+    /* transform: translate(20px); */
+    transition: 0.3s ease;
+}
+
+
+
+.social{
+    width: 100%;
+    height: 100px;
+    padding: 0 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social img{
+    width: 48px;
+    height: 48px;
+    background: #FBFBFB;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+
+form button{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    width: 325px;
+    height: 50px;
+    background: #003D61;
+    border-radius: 6px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20px;
+}
+
+@media only screen and (max-width:1200px) {
+    .boxWrapper{
+        width: 375px;
+        height: 850px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        width: 100%;
+        height: 100%;
+    }
+    .box1 img{
+        width: 375px;
+        height: 375px;
+    }
+    .box2{
+        min-width: 375px;
+        min-height:617px;
+        padding: 0;
+        left: 0px;
+        bottom: 60px ;
+        border-radius: 15px 15px 0 0;
+    }
+    .box2 > img{
+        width: 204px;
+        height: 154px;
+    }
+
+    .box2 h4 {
+        margin-top: 0;
+    }
+
+    form .rules .ruleLine1{
+        display: none;
+    }
+    form input{
+        margin-bottom: 20px ;
+    }
+    .ruleLine2{
+        flex-direction: column;
+    }
+    .social{
+        padding: 0;
+        justify-content: center;
+    }
+    .social img{
+        width: 35px;
+        height: 35px;
+        margin-left: 25px;
+    }
+
+    form button{
+        color: white;
+        font: 500;
+        width: 325px;
+        height: 50px;
+        background: #003D61;
+        border-radius: 6px;
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+    }
+}
+
