@@ -10,9 +10,11 @@ function clickedBox(evt) {
     if(result == 1){
         ball.className = 'active'
         checkIt.style.backgroundColor = 'green';
+        ball.style.transition = '0.5s'
     }else if(result == 2){
         ball.className = 'ball';
         checkIt.style.backgroundColor = 'grey';
+        ball.style.transition = '0.5s'
         return result = 0;
     }
 }
